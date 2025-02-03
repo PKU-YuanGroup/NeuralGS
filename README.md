@@ -21,7 +21,7 @@ We will update the following list after the paper is accepted.
 - [ ] We have uploaded our paper, NeuralGS on [arXiv-Coming soon!]()
 - [ ] Upload the code
 
-## 🍭 Novel and Deblurring View Synthesis Results
+## 🍭 Novel Synthesis Results
 ### 🌅 Qualitative comparison
 <img src="docs/static/img/vis_comprison.png"/>
 
