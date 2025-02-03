@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="static/assets/3d-fire.ico" type="image/x-icon">
+        <title> NeuralGS: Bridging Neural Fields and 3D Gaussian Splatting for Compact 3D Representation</title>
+
+        <link rel="stylesheet" href="static/css/academicons.min.css">
+        <link rel="stylesheet" href="static/css/fontawesome.min.css">
+        <script src="static/js/all.min.js"></script>
+        <script src="static/js/bulma-carousel.min.js"></script>
+
+
+        <link rel="stylesheet" href="static/css/style.css">
+        <script src="static/js/script.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+                    <a class="navbar-item" href="https://www.cs.cit.tum.de/cg/people/niedermayr/">
+                        <span class="icon">
+                            <i class="fas fa-home"></i>
+                        </span>
+                    </a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            More Research
+                        </a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" href="https://github.com/PKU-YuanGroup/EvaGaussians">
+                                EvaGaussians
+                            </a>
+                            <a class="navbar-item" href="https://github.com/PKU-YuanGroup/Cycle3D">
+                                Cycle3D
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container is-max-desktop">
+                    <div class="columns is-centered">
+                        <div class="column has-text-centered">
+                            <!-- <h1 class="title is-1 is-size-3-mobile publication-title"> NeuralGS: Bridging Neural Fields and 3D Gaussian Splatting 
+                                for Compact 3D Representation</h1> -->
+                            <h1>
+                                <span class="gradient-text"> 🚀 NeuralGS</span>: Bridging Neural Fields and 3D Gaussian Splatting for Compact 3D Representation
+                            </h1>
+                            <!-- <h2 class="subtitle is-4 opacity-1" style="margin-top: 1rem;opacity:0.7">Anonymous CVPR submission</h2>
+                            <div class="is-size-5 publication-authors">
+                                <span class="author-block"> Paper ID 801 </span>
+                            </div> -->
+                            <!-- <br> -->
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- PDF Link. -->
+                                <span class="link-block">
+                                    <a href=""
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://github.com/SuperFCR/NeuralGS"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code(coming soon)</span>
+                                    </a>
+                                </span>
+
+                            </div>
+                            <br>
+                            <!-- Authors -->
+                            <div class="is-size-5 publication-authors">
+                                <span class="author-block">
+                                    <strong>Zhenyu Tang</strong><sup>1*</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <strong>Chaoran Feng*</strong><sup>1*</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <strong>Xinhua Cheng</strong><sup>1,2</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <strong>Wangbo Yu</strong><sup>1,2</sup>,
+                                </span> 
+                                <span class="author-block">
+                                    <strong>Junwu Zhang</strong><sup>1</sup>,
+                                </span> 
+                                <br>
+                                <span class="author-block">
+                                    <strong>Yuan Liu</strong><sup>3†</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <strong>Xiaoxiao Long</strong><sup>3</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <strong>Wangping Wang</strong><sup>4</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <strong>Li Yuan</strong> <sup>1,2†</sup>,
+                                </span>
+                            </div>
+
+                            <!-- Organization -->
+                            <div class="is-size-5 publication-authors">
+                                <span class="author-block is-size-6"><sup>1</sup>Peking University</span> <br>
+                                <span class="author-block is-size-6"><sup>2</sup>Peng Cheng Laboratory</span> <br>
+                                <span class="author-block is-size-6"><sup>3</sup>Hong Kong University of Science and Technology</span> <br>
+                                <span class="author-block is-size-6"><sup>4</sup>Texas A&M University</span>
+                            </div>
+                            <!-- Note -->
+                            <h6 class="subtitle is-6 opacity-1" style="margin-top: 1rem;opacity:0.7"></h6>
+                                *These authors contributed equally to this work.
+                                <br>
+                                †Corresponding author.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero teaser is-light">
+            <div class="hero-body">
+                <div class="container">
+                    <div id="results-carousel" class="carousel results-carousel">
+                        <div class="item item-bicycle">
+                            <video poster="" id="bicycle" autoplay controls muted loop playsinline height="100%">
+                                <source src="./static/videos/origin_size/bicycle_combine_1k.mp4" type="video/mp4">
+                            </video>
+
+                        </div>
+
+                        <div class="item item-kitchen">
+                            <video poster="" id="kitchen" autoplay controls muted loop playsinline height="100%">
+                                <source src="./static/videos/origin_size/kitench_combine_1k.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="item item-room">
+                            <video poster="" id="room" autoplay controls muted loop playsinline height="100%">
+                                <source src="./static/videos/origin_size/room_compbine_1k.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="item item-garden">
+                            <video poster="" id="garden" autoplay controls muted loop playsinline height="100%">
+                                <source src="./static/videos/origin_size/garden_combine_1L.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="item item-playroom">
+                            <video poster="" id="playroom" autoplay controls muted loop playsinline height="100%">
+                                <source src="./static/videos/origin_size/playroom_combine_1k.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="item item-chair">
+                            <video poster="" id="chair" autoplay controls muted loop playsinline height="100%">
+                                <source src="./static/videos/origin_size/chair_combine_1k.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="item item-truck">
+                            <video poster="" id="truck" autoplay controls muted loop playsinline height="100%">
+                                <source src="./static/videos/origin_size/truck_combine_1k.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                    </div>
+                    <div style="height: 1rem;"></div>
+                    <h2 class="subtitle has-text-centered is-size-6-mobile">
+                        We propose <span class="gradient-text"><strong>NeuralGS</strong></span>, a novel framework that effectively adopts the neural field representation to encode the attributes of 3D Gaussians with multiple tiny MLPs, only requiring a small model size even for a large-scale scene.
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container is-max-desktop is-mobile">
+                <!-- Abstract. -->
+                <div class="columns is-centered">
+                    <div class="column is-four-fifths">
+                        <div class="has-text-centered">
+                            <h2 class="title is-3">📌 Abstract</h2>
+                        </div>
+                        <br>
+                        <div class="content has-text-justified">
+                            Recently, 3D Gaussian Splatting (3DGS) has gained popularity, demonstrating superior quality 
+                            and rendering speed in novel view synthesis. However, 3DGS requires millions of 3D Gaussians, 
+                            each with extensive associated attributes, resulting in significant storage and transmission costs. 
+                            In contrast, neural fields like NeRF can represent complex 3D scenes with Multi-Layer Perceptron 
+                            (MLP) neural networks using only a few megabytes. In this paper, we present a novel Gaussian compression 
+                            method  <strong>NeuralGS</strong> that effectively adopts the neural field representation to encode the attributes 
+                            of 3D Gaussians with MLPs, requiring a small storage size even for a large-scale scene.However, naively 
+                            fitting the Gaussian attributes with an MLP network leads to severely degenerated quality. 
+                            To address this, we adopt a clustering strategy and fit the Gaussians with multiple tiny MLPs for 
+                            different clusters, based on importance scores of Gaussians as fitting weights.We validate our approach 
+                            on multiple datasets, achieving a <strong>38x</strong> average model size reduction without harming the visual quality. 
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container is-max-desktop is-mobile">
+                <div class="is-centered" style="margin-bottom: 2rem;">
+                    <h2 class="title is-3">💡 Compression Method</h2>
+                </div>
+                <p>
+                    We propose a simple yet effective framework <strong>NeuralGS</strong>, which adopts the neural field 
+                    representation to encode the attributes of 3D Gaussians with MLPs to enable a compact 3D  representation. 
+                    Specifically, as shown in <em>Figure 1</em>, we use a designed criterion to assess the importance of 
+                    each Gaussian, allowing us to prune Gaussians that have minimal impact on renderings. 
+                    To reduce variations among Gaussians, we cluster these 3D Gaussians based on their attributes, ensuring 
+                    similarity within each cluster. Then, each cluster is then assigned a tiny MLP that fits the attributes of 
+                    its 3D Gaussians. Given the varying contributions of each Gaussian to the renderings, we apply Gaussian’s 
+                    importances as the fitting weights in the MLP fitting. We also incorporate a fine-tuning stage along with 
+                    frequency loss to restore quality and preserve high-frequency details.
+
+                    We address the storage and rendering issue of 3D Gaussian Splatting (3DGS) by compressing the
+                    reconstructed scene parameters and rendering the compressed representation via GPU rasterization.
+                    To compress the scenes, we first analyze its components and observe that the Spherical Harmonics
+                    (SH) coefficients and the multivariate Gaussian parameters take up the majority of storage space and
+                    are highly redundant.
+                    Our compression pipeline consists of three steps:
+                </p>
+                <br>
+                <div class="is-centered">
+                    <figure style="text-align: center;">
+                        <img src="static/img/pipeline.png" alt="Compression Pipeline" style="display: inline-block;">
+                        <figcaption style="text-align: center; margin-top: 0.5rem;">Figure 1: Overview of <strong>NeuralGS</strong>. </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section">
+            <div class="container is-max-desktop is-mobile">
+                <div class="is-centered" style="margin-bottom: 2rem;">
+                    <h2 class="title is-3">🔗 Results</h2>
+                </div>
+                <p>
+                    We evaluate our method on four datasets for comparison on NVIDIA A100 GPUs.
+                </p>
+                <br>
+
+                <div class="is-centered" style="margin-bottom: 1.5rem;">
+                    <h3 class="title is-3">Qualitative Comparisons</h3>
+                </div>
+
+                <div class="is-centered">
+                    <figure style="text-align: center;">
+                        <img src="static/img/vis_comprison.png" alt="Compression Pipeline" style="display: inline-block;">
+                        <figcaption style="text-align: center; margin-top: 0.5rem;"> Figure 2: Qualitative comprison on the mentioned four datasets. </figcaption>
+                    </figure>
+                </div>
+
+                <br>
+                <div class="is-centered" style="margin-bottom: 1.5rem;">
+                    <h3 class="title is-3">Quantitative Comparisons</h3>
+                </div>
+
+                <div class="is-centered">
+                    <figure style="text-align: center;">
+                        <figcaption style="text-align: center; margin-top: 0.5rem;"> Table 1. Quantitative results evaluated on <em>Mip-NeRF 360, Tanks&Temples, and Deep Blending</em> datasets. We highlight the
+                            best-performing results in <span style="color: red;">red</span> and the second-best results in <span style="color: #e9d600;">yellow</span> for all compression methods </figcaption>
+                        <img src="static/img/tables/table1.png" alt="Compression Pipeline" style="display: inline-block;">
+                    </figure>
+                </div>
+                <br>
+
+                <div class="is-centered" style="display: flex; justify-content: center; align-items: flex-start;">
+  
+                    <figure style="text-align: center; margin: 50 1rem;">
+                        <figcaption style="text-align: center; margin-top: 0.5rem;">Table 2. Quantitative results of the proposed method evaluated on the <em>NeRF-Synthetic</em> dataset. We highlight the best-performing results in <span style="color: red;">red</span> and the second-best results in <span style="color: #e9d600;">yellow</span> for all compression methods.</figcaption>
+                        <img src="static/img/tables/table2.png" alt="Table 2" style="display: inline-block; width: 45%;">
+                    </figure>
+
+                </div>
+            </div>
+        </section>
+        <section class="section" id="BibTeX" style="margin-top: -5em;">
+            <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@InProceedings{neuralgs,
+                author    = {Zhenyu Tang, Chaoran Feng, Xinhua Cheng, Wangbo Yu, Junwu Zhang, Yuan Liu, Xiaoxiao Long, Wangping Wang, Li Yuan},
+                title     = {NeuralGS: Bridging Neural Fields and 3D Gaussian Splatting for Compact 3D Representation},
+                booktitle = {},
+                month     = {December},
+                year      = {2024},
+                pages     = {}
+            }</code></pre>
+            </div>
+        </section>
+
+
+        <script>
+            for (var elm of document.querySelectorAll(".image-compare")) {
+                new BeforeAfter(elm)
+            }
+            var options = {
+                slidesToScroll: 1,
+                slidesToShow: 3,
+                loop: true,
+                infinite: true,
+                autoplay: false,
+                autoplaySpeed: 3000,
+            }
+
+            // Initialize all div with carousel class
+            var carousels = bulmaCarousel.attach('.carousel', options);
+
+            for (var i = 0; i < carousels.length; i++) {
+                // Add listener to  event
+                carousels[i].on('before:show', () => { });
+            }
+
+            // Access to bulmaCarousel instance of an element
+            var element = document.querySelector('#my-element');
+            if (element && element.bulmaCarousel) {
+                // bulmaCarousel instance is available as element.bulmaCarousel
+                element.bulmaCarousel.on('before-show', () => { });
+            }
+        </script>
+    </body>
+
+    </html>
