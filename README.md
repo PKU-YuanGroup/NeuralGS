@@ -1,15 +1,15 @@
 <h2 align="center"> 
-  <a href="https://github.com/SuperFCR/NeuralGS"> NeuralGS: Bridging Neural Fields and 3D Gaussian Splatting for Compact 3D Representation</a>
+  <a href="https://github.com/PKU-YuanGroup/NeuralGS"> NeuralGS: Bridging Neural Fields and 3D Gaussian Splatting for Compact 3D Representation</a>
 </h2>
 <h5 align="center"> 
 If you like our project, please give us a star ⭐ on GitHub for latest update.  </h5>
 <h5 align="center">
 
 <!-- [![arXiv](https://img.shields.io/badge/Arxiv-2411.20224-b31b1b.svg?logo=arXiv)](https://arxiv.org/) -->
-[![License](https://img.shields.io/badge/License-MIT-yellow)](https://github.com/SuperFCR/NeuralGS/blob/main/LICENSE) 
-[![GitHub repo stars](https://img.shields.io/github/stars/SuperFCR/NeuralGS?style=flat&logo=github&logoColor=whitesmoke&label=Stars)](https://github.com/SuperFCR/NeuralGS/stargazers)&#160;
-[![GitHub repo forks](https://img.shields.io/github/forks/SuperFCR/NeuralGS?style=flat&logo=github&logoColor=whitesmoke&label=Forks)](https://github.com/SuperFCR/NeuralGS/network)&#160;
-[![GitHub repo watchers](https://img.shields.io/github/watchers/SuperFCR/NeuralGS?style=flat&logo=github&logoColor=whitesmoke&label=Watchers)](https://github.com/SuperFCR/NeuralGS/watchers)&#160;
+[![License](https://img.shields.io/badge/License-MIT-yellow)](https://github.com/PKU-YuanGroup/NeuralGS/blob/main/LICENSE) 
+[![GitHub repo stars](https://img.shields.io/github/stars/PKU-YuanGroup/NeuralGS?style=flat&logo=github&logoColor=whitesmoke&label=Stars)](https://github.com/PKU-YuanGroup/NeuralGS/stargazers)&#160;
+[![GitHub repo forks](https://img.shields.io/github/forks/PKU-YuanGroup/NeuralGS?style=flat&logo=github&logoColor=whitesmoke&label=Forks)](https://github.com/PKU-YuanGroup/NeuralGS/network)&#160;
+[![GitHub repo watchers](https://img.shields.io/github/watchers/PKU-YuanGroup/NeuralGS?style=flat&logo=github&logoColor=whitesmoke&label=Watchers)](https://github.com/PKU-YuanGroup/NeuralGS/watchers)&#160;
 
 
 </h5>Implemetation of Bridging Neural Fields and 3D Gaussian Splatting for Compact 3D Representation.
@@ -74,6 +74,6 @@ To be contunied...
 
 ## 🤝 Contributors
 
-<a href="https://github.com/SuperFCR/NeuralGS/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=SuperFCR/NeuralGS" />
+<a href="https://github.com/PKU-YuanGroup/NeuralGS/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=PKU-YuanGroup/NeuralGS" />
 </a>
