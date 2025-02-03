@@ -17,7 +17,7 @@ If you like our project, please give us a star ⭐ on GitHub for latest update. 
 
 ## 🗓️ TODO
 We will update the following list after the paper is accepted.
-- [x] [2024-12-24] We have released our [project page](http://www.falcary.com/NeuralGS/).
+- [x] [2025-02-03] We have released our [project page](http://www.falcary.com/NeuralGS/).
 - [ ] We have uploaded our paper, NeuralGS on [arXiv-Coming soon!]()
 - [ ] Upload the code
 
