@@ -5,7 +5,7 @@
 If you like our project, please give us a star ⭐ on GitHub for latest update.  </h5>
 <h5 align="center">
 
-<!-- [![arXiv](https://img.shields.io/badge/Arxiv-2411.20224-b31b1b.svg?logo=arXiv)](https://arxiv.org/) -->
+[![arXiv](https://img.shields.io/badge/Arxiv-2411.20224-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2503.23162)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](https://github.com/PKU-YuanGroup/NeuralGS/blob/main/LICENSE) 
 [![GitHub repo stars](https://img.shields.io/github/stars/PKU-YuanGroup/NeuralGS?style=flat&logo=github&logoColor=whitesmoke&label=Stars)](https://github.com/PKU-YuanGroup/NeuralGS/stargazers)&#160;
 [![GitHub repo forks](https://img.shields.io/github/forks/PKU-YuanGroup/NeuralGS?style=flat&logo=github&logoColor=whitesmoke&label=Forks)](https://github.com/PKU-YuanGroup/NeuralGS/network)&#160;
