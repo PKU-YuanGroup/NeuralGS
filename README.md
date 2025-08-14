@@ -18,7 +18,7 @@ If you like our project, please give us a star ⭐ on GitHub for latest update. 
 ## 🗓️ TODO
 We will update the following list after the paper is accepted.
 - [x] [2025-02-07] We have released our [project page](https://pku-yuangroup.github.io/NeuralGS).
-- [x] We have uploaded our paper, NeuralGS on [arXiv](https://arxiv.org/abs/2503.23162)
+- [x] We have uploaded our paper, NeuralGS on [arXiv](https://arxiv.org/abs/2503.23162).
 - [ ] Upload the code
 
 ## 🍭 Novel Synthesis Results
