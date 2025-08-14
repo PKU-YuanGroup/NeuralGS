@@ -30,7 +30,7 @@ We will update the following list after the paper is accepted.
 
 <div class="is-centered">
     <figure style="text-align: center;">
-        <figcaption style="text-align: center; margin-top: 0.5rem;"> Table 1. Quantitative results evaluated on <em>Mip-NeRF 360, Tanks&Temples, and Deep Blending</em> datasets. We highlight the best-performing results in <span style="color: red;">red</span> and the second-best results in <span style="color: #e9d600;">yellow</span> for all compression methods </figcaption>
+        <figcaption style="text-align: center; margin-top: 0.5rem;"> Table 1. Quantitative results evaluated on <em>Mip-NeRF 360, Tanks&Temples, and Deep Blending</em> datasets. We highlight the best-performing results in <strong>bold</strong> and the second-best results in <u>underline</u> for all compression methods. </figcaption>
         <img src="docs/static/img/tables/table1.png" alt="Compression Pipeline" style="display: inline-block;">
     </figure>
 </div>
