@@ -34,28 +34,18 @@ We will update the following list after the paper is accepted.
         <img src="docs/static/img/tables/table1.png" alt="Compression Pipeline" style="display: inline-block;">
     </figure>
 </div>
+<div class="is-centered">
+    <figure style="text-align: center;">
+        <figcaption style="text-align: center; margin-top: 0.5rem;"> Table 2. Comparison of the rendering speed(FPS↑). The rendering speed of all methods is measured on our machine. </figcaption>
+        <img src="docs/static/img/tables/table2.png" alt="Compression Pipeline" style="display: inline-block;">
+    </figure>
+</div>
+
 <!-- <img src="docs/static/img/tables/table1.png"/> -->
 <!-- <img src="docs/static/img/tables/table2.png"/>
 <img src="docs/static/img/tables/table3.png"/>
 <img src="docs/static/img/tables/table4.png"/> -->
-<table>
-  <tr>
-    <td style="width: 45%; vertical-align: top; padding-right: 10px;">
-      <img src="docs/static/img/tables/table2.png" alt="Table 2" style="width: 100%; display: block; margin-bottom: 10px;">
-      <p style="text-align: center;">Table 2. Quantitative results of the proposed method evaluated on the <em>NeRF-Synthetic</em> dataset. We highlight the best-performing results in <span style="color: red;">red</span> and the second-best results in <span style="color: #e9d600;">yellow</span> for all compression methods.</p>
-    </td>
-    <td style="width: 55%; vertical-align: top;">
-      <div style="margin-bottom: 20px;">
-        <img src="docs/static/img/tables/table3.png" alt="Table 3" style="width: 100%; display: block; margin-bottom: 5px;">
-        <p style="text-align: center;">Table 3. Performance comparison with 3DGS. Rendering FPS and model size (MB) are reported. The rendering speed of both methods is measured on our machine.</p>
-      </div>
-      <div>
-        <img src="docs/static/img/tables/table4.png" alt="Table 4" style="width: 100%; display: block; margin-bottom: 5px;">
-        <p style="text-align: center;">Table 4. Quantitative ablation study on the <em>Deep Blending</em> dataset by progressively adding our proposed improvement.</p>
-      </div>
-    </td>
-  </tr>
-</table>
+
 
 <!-- <h2>
   <img src="assets/acknowledgement.svg" alt="Lego Icon" style="height:24px; width:24px; vertical-align:middle; margin-right:10px;">
