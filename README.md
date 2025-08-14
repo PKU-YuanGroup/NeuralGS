@@ -37,7 +37,7 @@ We will update the following list after the paper is accepted.
 <div class="is-centered">
     <figure style="text-align: center;">
         <figcaption style="text-align: center; margin-top: 0.5rem;"> Table 2. Comparison of the rendering speed(FPS↑). The rendering speed of all methods is measured on our machine. </figcaption>
-        <img src="docs/static/img/tables/table2.png" alt="Compression Pipeline" style="display: inline-block;">
+        <img src="docs/static/img/tables/table2.png" alt="Compression Pipelin 2" style=""width: 60%; max-width: 600px; height: auto;">
     </figure>
 </div>
 
